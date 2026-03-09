@@ -1,7 +1,7 @@
 import axios from "axios"
 
 const API = axios.create({
-  baseURL: "http://https://vitalsync-production-4649.up.railway.app:5000/api"
+  baseURL: "https://vitalsync-2s35.onrender.com"
 })
 
 export const getHealthData = () => API.get("/health")
