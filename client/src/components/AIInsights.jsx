@@ -93,7 +93,7 @@ export default function AIInsights({ data }) {
         .slice(0, -1) // exclude current message (sent separately)
         .map(m => ({ role: m.role, content: m.content }));
 
-      const response = await axios.post("http://localhost:5000/api/ai/ask", {
+      const response = await axios.post("https://vitalsync-2s35.onrender.com", {
         question: q,
         data,
         history,
